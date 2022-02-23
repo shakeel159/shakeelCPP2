@@ -30,7 +30,8 @@ class Deck
 
     void SetUpCards()
     {
-        for (int col = (int)Suits::SPADES; col <= (int)Suits::SPADES; col++)
+        //did it pull?
+        for (int col = (int)Suits::SPADES; col <= (int)Suits::Clubs; col++)
         {
             for (int row = (int)CardName::NINE; row <= (int)CardName::ACE; row++)
             {
