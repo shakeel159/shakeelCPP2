@@ -3,6 +3,7 @@
 #include <vector>
 #include <time.h> 
 #include "PlayerOne.cpp"
+#include "Deck.cpp"
 
 
 using std::cout;
@@ -13,14 +14,12 @@ int main(int argc, char * argv[])
 {
     
     Player pl;
-    for (int i = 0; i < 1; i++)
-    {
-        pl.randGen();
-    }
-    
-    pl.Trump();
+    //somehow figure out how to draw different cards in hand from thin air
+    //pl.randGen();
+    //pl.Trump();
 
-
+    Deck deck;
+    deck.SetUpCards();
 
     return 0;
 }
