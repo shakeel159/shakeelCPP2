@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include "Card.cpp"
+#include <time.h> 
 
 //Deck Class courtesy of https://www.youtube.com/watch?v=JF6RDcXnVKI
 
@@ -11,10 +12,19 @@ using std::string;
 
 int main(int argc, char * argv[])
 {
-    //std::cout << "still working?" << std::endl;
     Deck deck;
-    deck.SetUpCards();
-    cout << " " << endl;
-    deck.printall();
+
+    int cardsInHand;
+    srand (time(NULL));
+    cardsInHand = rand() % 5;
+    for (int i = 0; i < 5; i++)
+    {     
+        deck.SetUpCards();
+        cout << " " << endl;
+        deck.printall();
+    }
+    
+
+
     return 0;
 }
