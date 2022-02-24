@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/euchre/Card.cpp
-iostream
--
-string
--
-vector
--
-
 /mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/euchre/PlayerOne.cpp
 iostream
 -
