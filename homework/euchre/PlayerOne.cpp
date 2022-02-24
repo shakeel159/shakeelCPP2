@@ -21,6 +21,7 @@ class Player
 
     void randGen()
     {
+        srand(time(0));
         cout << CardName[CardRand] << " of " << Suits[SuitsRand] << endl;
     }
 };
