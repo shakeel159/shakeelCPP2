@@ -9,10 +9,9 @@ using std::string;
 using std::ostream;
 using std::vector;
 
+
 string CardName[] = { "NINE", "TEN", "JACK", "QUEEN", "KING", "ACE"};
 string Suits[] = {"SPADES", "HEARTS" ,"DIAMONDS", "Clubs"};
-int CardRand = rand() % 6;
-int SuitsRand = rand() % 4;
 
 
 class Player
@@ -22,6 +21,8 @@ class Player
     void randGen()
     {
         srand(time(0));
+        int CardRand = rand() % 6;
+        int SuitsRand = rand() % 4;
         cout << CardName[CardRand] << " of " << Suits[SuitsRand] << endl;
     }
 };
