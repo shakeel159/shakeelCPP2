@@ -11,11 +11,6 @@ using std::cout;
 using std::endl;
 using std::string;
 
-string CardName[] = { "NINE", "TEN", "JACK", "QUEEN", "KING", "ACE"};
-string Suits[] = {"SPADES", "HEARTS" ,"DIAMONDS", "Clubs"};
-int CardRand = rand() % 6;
-int SuitsRand = rand() % 4;
-
 int main(int argc, char * argv[])
 {
     //Deck deck;
@@ -29,9 +24,8 @@ int main(int argc, char * argv[])
         
     // }
 
-    //pl.randGen();
+    pl.randGen();
 
-    cout << CardName[CardRand] << " of " << Suits[SuitsRand] << endl;
 
 
     return 0;
