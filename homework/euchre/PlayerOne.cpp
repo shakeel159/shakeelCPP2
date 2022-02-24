@@ -23,6 +23,6 @@ class Player
     {
         std::string CardName;
         CardName = CardName[rand() % 6];
-        std::cout << CardName;
+        std::cout << CardName << endl;;
     }
 };
