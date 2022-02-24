@@ -13,8 +13,11 @@ int main(int argc, char * argv[])
 {
     
     Player pl;
-
-    pl.randGen();
+    for (int i = 0; i < 1; i++)
+    {
+        pl.randGen();
+    }
+    
     pl.Trump();
 
 
