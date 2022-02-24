@@ -21,6 +21,22 @@ class Card
     Suits suits;
     int value;
 
+    void PrintCard()
+    {
+        PrintValues();
+
+        cout << " of ";
+
+        PrintSuits();
+
+        cout << "" << endl;
+    }
+
+    void PrintValues()
+    {
+        cout << value << endl;
+    }
+
     void PrintSuits()
     {
         if (suits == Suits::SPADES)
@@ -57,7 +73,7 @@ class Deck
             {
                 int index = (6 * col) + row - 1;
 
-                arryCards[index].PrintSuits();
+                arryCards[index].PrintCard();
             }
 
             cout << " " << endl;
