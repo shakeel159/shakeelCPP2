@@ -12,7 +12,9 @@ using std::endl;
 using std::string;
 
 string CardName[] = { "NINE", "TEN", "JACK", "QUEEN", "KING", "ACE"};
-int CardRand = rand() % 4;
+string Suits[] = {"SPADES", "HEARTS" ,"DIAMONDS", "Clubs"};
+int CardRand = rand() % 6;
+int SuitsRand = rand() % 4;
 
 int main(int argc, char * argv[])
 {
@@ -29,7 +31,7 @@ int main(int argc, char * argv[])
 
     //pl.randGen();
 
-    cout << CardName[CardRand];
+    cout << CardName[CardRand] << " of " << Suits[SuitsRand] << endl;
 
 
     return 0;
