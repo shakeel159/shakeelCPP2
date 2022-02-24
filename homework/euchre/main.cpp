@@ -13,17 +13,14 @@ using std::string;
 int main(int argc, char * argv[])
 {
     Deck deck;
-
+    
     int cardsInHand;
     srand (time(NULL));
     cardsInHand = rand() % 5;
-    for (int i = 0; i < 5; i++)
-    {     
-        deck.SetUpCards();
-        cout << " " << endl;
-        deck.printall();
-    }
     
+    //deck.SetUpCards();
+    cout << "." << endl;
+    //deck.printall();
 
 
     return 0;
