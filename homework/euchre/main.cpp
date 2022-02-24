@@ -27,6 +27,5 @@ int main(int argc, char * argv[])
     pl.randGen();
 
 
-
     return 0;
 }
