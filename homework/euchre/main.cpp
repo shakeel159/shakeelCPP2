@@ -31,9 +31,9 @@ int main(int argc, char * argv[])
 
     srand(time(0));
         
-        string CardName;
-        CardName = CardName[rand() % 6];
-        cout << CardName << endl;
+    string CardName;
+    CardName = CardName[rand() % 6];
+    cout << CardName << endl;
 
 
     return 0;
