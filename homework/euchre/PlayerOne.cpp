@@ -22,7 +22,7 @@ class Player
     {
         for (int i = 0; i < 5; i++)
         {
-            for (int j = 0; j < 1; j++)
+            for (int j = 0; j < 2; j++)
             {
                 srand(time(0));
                 int CardRand = rand() % 6;
