@@ -19,4 +19,3 @@ int main(int argc, char * argv[])
     deck.printall();
     return 0;
 }
-\
