@@ -19,13 +19,11 @@ int main(int argc, char * argv[])
     cardsInHand = rand() % 5;
     for (int i = 0; i < 5; i++)
     {
+        deck.SetUpCards();
+        cout << "." << endl;
         deck.printall();        
         
     }
-    
-    
-    //deck.SetUpCards();
-    cout << "." << endl;
 
 
     return 0;
