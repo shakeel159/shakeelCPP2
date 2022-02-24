@@ -12,7 +12,7 @@ using std::endl;
 using std::string;
 
 string CardName[] = { "NINE", "TEN", "JACK", "QUEEN", "KING", "ACE"};
-
+int CardRand = rand() % 4;
 
 int main(int argc, char * argv[])
 {
@@ -29,11 +29,7 @@ int main(int argc, char * argv[])
 
     //pl.randGen();
 
-    srand(time(0));
-        
-    string CardName;
-    CardName = CardName[rand() % 6];
-    cout << CardName << endl;
+    cout << CardName[CardRand];
 
 
     return 0;
