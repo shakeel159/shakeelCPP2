@@ -17,10 +17,8 @@ string Suits[] = {"SPADES", "HEARTS" ,"DIAMONDS", "Clubs"};
 class Player
 {
     public:
-
     int CardRand = rand() % 6;
     int SuitsRand = rand() % 4;
-
     void randGen()
     {
         for (int i = 0; i < 5; i++)
