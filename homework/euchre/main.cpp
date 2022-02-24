@@ -3,6 +3,7 @@
 #include <vector>
 #include "Card.cpp"
 #include <time.h> 
+#include "PlayerOne.cpp"
 
 //Deck Class courtesy of https://www.youtube.com/watch?v=JF6RDcXnVKI
 
@@ -12,18 +13,19 @@ using std::string;
 
 int main(int argc, char * argv[])
 {
-    Deck deck;
-    
-    int cardsInHand;
-    srand (time(NULL));
-    cardsInHand = rand() % 5;
-    for (int i = 0; i < 5; i++)
-    {
-        deck.SetUpCards();
-        cout << "." << endl;
-        deck.printall();        
+    //Deck deck;
+    Player pl;
+
+    // for (int i = 0; i < 5; i++)
+    // {
+    //     deck.SetUpCards();
+    //     cout << "." << endl;
+    //     deck.printall();        
         
-    }
+    // }
+
+    pl.randGen();
+
 
 
     return 0;

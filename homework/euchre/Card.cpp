@@ -11,96 +11,96 @@ using std::vector;
 //total of 24 cards
 
 
-enum class CardName { NINE = 1, TEN, JACK, QUEEN, KING, ACE};
-enum class Suits { SPADES, HEARTS, DIAMONDS, Clubs};
+//enum class CardName { NINE = 1, TEN, JACK, QUEEN, KING, ACE};
+//enum class Suits { SPADES, HEARTS, DIAMONDS, Clubs};
 
 class Card
 {
-    public:
-    CardName names;
-    Suits suits;
-    int value;
+//     public:
+//     CardName names;
+//     Suits suits;
+//     int value;
 
-    void PrintCard()
-    {
-        PrintValues();
+//     void PrintCard()
+//     {
+//         PrintValues();
 
-        cout << " of ";
+//         cout << " of ";
 
-        PrintSuits();
+//         PrintSuits();
 
-        cout << "" << endl;
-    }
+//         cout << "" << endl;
+//     }
 
-    void PrintValues()
-    {
-        cout << value << endl;
-    }
+//     void PrintValues()
+//     {
+//         cout << value << endl;
+//     }
 
-    void PrintSuits()
-    {
-        if (suits == Suits::SPADES)
-        {
-            cout << "Spades" << endl;
-        }
-        else if (suits == Suits::HEARTS)
-        {
-            cout << "Hearts" << endl;
-        }
-        else if (suits == Suits::DIAMONDS)
-        {
-            cout << "Diamonds" << endl;
-        }
-        else if (suits == Suits::Clubs)
-        {
-            cout << "Clubs" << endl;
-        }
+//     void PrintSuits()
+//     {
+//         if (suits == Suits::SPADES)
+//         {
+//             cout << "Spades" << endl;
+//         }
+//         else if (suits == Suits::HEARTS)
+//         {
+//             cout << "Hearts" << endl;
+//         }
+//         else if (suits == Suits::DIAMONDS)
+//         {
+//             cout << "Diamonds" << endl;
+//         }
+//         else if (suits == Suits::Clubs)
+//         {
+//             cout << "Clubs" << endl;
+//         }
         
         
-    }
-};
+//     }
+// };
 
-class Deck
-{
-    public:
-    Card arryCards[24];
+// class Deck
+// {
+//     public:
+//     Card arryCards[24];
 
-    void printall()
-    {
-        for (int col = (int)Suits::SPADES; col <= (int)Suits::Clubs; col++)
-        {
-            for (int row = (int)CardName::NINE; row <= (int)CardName::ACE; row++)
-            {
-                int index = (6 * col) + row - 1;
+//     void printall()
+//     {
+//         for (int col = (int)Suits::SPADES; col <= (int)Suits::Clubs; col++)
+//         {
+//             for (int row = (int)CardName::NINE; row <= (int)CardName::ACE; row++)
+//             {
+//                 int index = (6 * col) + row - 1;
 
-                arryCards[index].PrintCard();
-            }
+//                 arryCards[index].PrintCard();
+//             }
 
-            cout << " " << endl;
-        }
-    }
+//             cout << " " << endl;
+//         }
+//     }
 
-    void SetUpCards()
-    {
-        for (int col = (int)Suits::SPADES; col <= (int)Suits::Clubs; col++)
-        {
-            for (int row = (int)CardName::NINE; row <= (int)CardName::ACE; row++)
-            {
-                Card c;
-                c.suits = (Suits)col;
-                c.names = (CardName)row;
-                c.value = (int)c.names;
+//     void SetUpCards()
+//     {
+//         for (int col = (int)Suits::SPADES; col <= (int)Suits::Clubs; col++)
+//         {
+//             for (int row = (int)CardName::NINE; row <= (int)CardName::ACE; row++)
+//             {
+//                 Card c;
+//                 c.suits = (Suits)col;
+//                 c.names = (CardName)row;
+//                 c.value = (int)c.names;
 
-                cout << (int)c.names << " of " << (int)c.suits << endl;
+//                 cout << (int)c.names << " of " << (int)c.suits << endl;
 
-                int index = (6 * col) + row - 1;
+//                 int index = (6 * col) + row - 1;
 
-                arryCards[index] = c;
-            }
+//                 arryCards[index] = c;
+//             }
             
-        }
+//         }
         
-    }
+//     }
 };
     
 
