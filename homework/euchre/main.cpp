@@ -17,10 +17,15 @@ int main(int argc, char * argv[])
     int cardsInHand;
     srand (time(NULL));
     cardsInHand = rand() % 5;
+    for (int i = 0; i < 5; i++)
+    {
+        deck.printall();        
+        
+    }
+    
     
     //deck.SetUpCards();
     cout << "." << endl;
-    //deck.printall();
 
 
     return 0;
