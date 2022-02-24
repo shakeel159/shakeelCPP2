@@ -14,7 +14,7 @@ void PrintHand()
 
 int main(int argc, char * argv[])
 {
-    std::cout << "still working?" << std::endl;
+    //std::cout << "still working?" << std::endl;
     Deck deck;
     deck.SetUpCards();
     return 0;
