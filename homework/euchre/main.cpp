@@ -15,6 +15,7 @@ int main(int argc, char * argv[])
     Player pl;
 
     pl.randGen();
+    pl.Trump();
 
 
 

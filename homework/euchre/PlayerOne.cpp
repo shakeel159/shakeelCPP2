@@ -35,6 +35,8 @@ class Player
     {
         int CardRand = rand() % 6;
         int SuitsRand = rand() % 4;
+        cout << endl;
+        cout << "trump card: " << endl;
         cout << CardName[CardRand] << " of " << Suits[SuitsRand] << endl;
     }
 };
