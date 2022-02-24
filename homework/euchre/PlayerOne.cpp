@@ -22,13 +22,10 @@ class Player
     {
         for (int i = 0; i < 5; i++)
         {
-            for (int j = 0; j < 2; j++)
-            {
-                srand(time(0));
-                int CardRand = rand() % 6;
-                int SuitsRand = rand() % 4;
-                cout << CardName[CardRand] << " of " << Suits[SuitsRand] << endl;
-            }
+            srand(time(0));
+            int CardRand = rand() % 6;
+            int SuitsRand = rand() % 4;
+            cout << CardName[CardRand] << " of " << Suits[SuitsRand] << endl;
             
         }
     
