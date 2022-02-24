@@ -13,7 +13,7 @@ using std::vector;
 //enum class Suits { SPADES, HEARTS, DIAMONDS, Clubs};
 
 string Suits[] = {"SPADES", "HEARTS" ,"DIAMONDS", "Clubs"};
-string CardName[] = { "NINE", "TEN", "JACK", "QUEEN", "KING", "ACE"};
+//string CardName[] = { "NINE", "TEN", "JACK", "QUEEN", "KING", "ACE"};
 
 class Player
 {
@@ -21,10 +21,6 @@ class Player
 
     void randGen()
     {
-        srand(time(0));
         
-        string CardName;
-        CardName = CardName[rand() % 6];
-        cout << CardName << endl;
     }
 };

@@ -11,6 +11,9 @@ using std::cout;
 using std::endl;
 using std::string;
 
+string CardName[] = { "NINE", "TEN", "JACK", "QUEEN", "KING", "ACE"};
+
+
 int main(int argc, char * argv[])
 {
     //Deck deck;
@@ -24,7 +27,13 @@ int main(int argc, char * argv[])
         
     // }
 
-    pl.randGen();
+    //pl.randGen();
+
+    srand(time(0));
+        
+        string CardName;
+        CardName = CardName[rand() % 6];
+        cout << CardName << endl;
 
 
     return 0;
