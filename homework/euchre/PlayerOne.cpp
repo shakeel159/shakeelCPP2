@@ -19,11 +19,11 @@ class Player
     void PLayerHand()
     {
         // randomiz card and set up for loop to only print 5 cards for hand.
-        //for (int i = 0; i < 5; i++)
-        //{
-        //    srand(time(0));
-        //    
-        //}
+        for (int i = 0; i < 5; i++)
+        {
+            srand(time(0));
+            
+        }
         
     }
 
