@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/euchre/main.cpp" "/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/Euchre/build/CMakeFiles/euchre.dir/main.cpp.o"
+  "/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/Euchre/main.cpp" "/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/Euchre/CMakeFiles/euchre.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
