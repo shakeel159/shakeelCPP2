@@ -16,7 +16,7 @@ int main(int argc, char * argv[])
     Player pl;
     Player p2;
 
-    pl.PLayerHand();
-    cout << "Hello World" << endl;
+    deck.PrintHand();
+    //cout << "Hello World" << endl;
     return 0;
 }
