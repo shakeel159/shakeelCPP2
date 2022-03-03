@@ -13,13 +13,13 @@ using std::string;
 int main(int argc, char * argv[])
 {
     Deck deck;
-    Player pl;
-    Player p2;
+    //Player pl;
+    //Player p2;
 
     deck.printall();
     //p1.hand = deck.PrintHand();
     //p2.hand = deck.getHand();
-    pl.PLayerHand();
+    //pl.PLayerHand();
 
     return 0;
 }
