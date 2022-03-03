@@ -1,0 +1,3 @@
+/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/Euchre/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/Euchre/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/Euchre/CMakeFiles/euchre.dir
