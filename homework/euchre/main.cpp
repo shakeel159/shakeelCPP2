@@ -16,10 +16,10 @@ int main(int argc, char * argv[])
     Player pl;
     Player p2;
 
-    deck.PrintHand();
+    deck.printall();
+    //p1.hand = deck.PrintHand();
     //p2.hand = deck.getHand();
-    
-    //pl.PLayerHand();
+    pl.PLayerHand();
 
     return 0;
 }
