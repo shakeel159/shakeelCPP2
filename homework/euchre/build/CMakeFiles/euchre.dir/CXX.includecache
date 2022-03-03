@@ -16,7 +16,7 @@ vector
 time.h
 -
 
-/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/euchre/PlayerOne.cpp
+/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/euchre/Player.cpp
 iostream
 -
 string
@@ -27,6 +27,8 @@ time.h
 -
 Deck.cpp
 /mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/euchre/Deck.cpp
+cstdlib
+-
 
 /mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/euchre/main.cpp
 iostream
@@ -37,6 +39,6 @@ vector
 -
 time.h
 -
-PlayerOne.cpp
-/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/euchre/PlayerOne.cpp
+Player.cpp
+/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/euchre/Player.cpp
 

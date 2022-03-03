@@ -91,6 +91,7 @@ class Deck
         for (int i = 0; i < len; i++) {
             arryCards[i].PrintCard();
         }
+        
     }
 
     // return array of 5 cards
@@ -115,6 +116,11 @@ class Deck
         }
         
         //return hand;
+    }
+    void GetTrump(){
+        for (int i = 0; i < 1; i++) {
+            arryCards[i].PrintCard();
+        }
     }
 
     void SetUpCards()

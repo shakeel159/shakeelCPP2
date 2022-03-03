@@ -2,7 +2,7 @@
 #include <string>
 #include <vector>
 #include <time.h> 
-#include "PlayerOne.cpp"
+#include "Player.cpp"
 //#include "Deck.cpp"
 
 
@@ -13,13 +13,21 @@ using std::string;
 int main(int argc, char * argv[])
 {
     Deck deck;
-    //Player pl;
-    //Player p2;
+    Player p1;
+    Player p2;
 
-    //deck.printall();
+    p1.SetUpDeck();
     //p1.hand = deck.PrintHand();
-    //p2.hand = deck.getHand();
-    //pl.PLayerHand();
+    //p2.hand = deck.PrintHand();
+    cout << endl;
+    p1.GetHand();
+    p1.GetHand();
+    p1.GetHand();
+    p1.GetHand();
 
+    p1.PrintAll();
+    cout << endl;
+    cout << "trump card: " <<endl;
+    p1.trump();
     return 0;
 }
