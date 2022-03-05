@@ -13,21 +13,72 @@ using std::string;
 int main(int argc, char * argv[])
 {
     Deck deck;
-    Player p1;
+    Player dealer;
     Player p2;
+    Player p3;
+    Player p4;
 
-    p1.SetUpDeck();
+    dealer.SetUpDeck();
+    p2.SetUpDeck();
+    p3.SetUpDeck();
+    p4.SetUpDeck();
+
+    string output;
     //p1.hand = deck.PrintHand();
     //p2.hand = deck.PrintHand();
-    cout << endl;
-    p1.GetHand();
-    p1.GetHand();
-    p1.GetHand();
-    p1.GetHand();
+    for (int i = 0; i < 1; i++)
+    {
+        cout << endl;
+        dealer.Shuffle();
+        dealer.GetHand();
+    }
+    for (int i = 0; i < 1; i++)
+    {
+        cout << endl;
+        p2.Shuffle();
+        p2.Shuffle();
+        p2.GetHand();
+    }
+    for (int i = 0; i < 1; i++)
+    {
+        cout << endl;
+        p3.Shuffle();
+        p3.GetHand();
+    }
+    for (int i = 0; i < 1; i++)
+    {
+        cout << endl;
+        //p4.Shuffle();
+        p4.GetHand();
+    }
 
-    p1.PrintAll();
     cout << endl;
     cout << "trump card: " <<endl;
-    p1.trump();
+    dealer.trump();
+    cout << endl;
+
+    output = p2.ChooseToPass();
+    output = p3.ChooseToPass();
+    output = p4.ChooseToPass();
+    if(output == "pass"){
+        cout << "Player 2 decided to " + p2.ChooseToPass() << endl;
+    }
+    else{
+        cout << "Player 2 decided to " + p2.ChooseToPass() << endl;
+    }
+    if(output == "pass"){
+        cout << "Player 3 decided to " + p3.ChooseToPass() << endl;
+    }
+    else{
+        cout << "Player 3 decided to " + p3.ChooseToPass() << endl;
+    }
+    if(output == "pass"){
+        cout << "Player 4 decided to " + p4.ChooseToPass() << endl;
+    }
+    else{
+        cout << "Player 4 decided to " + p4.ChooseToPass() << endl;
+    }
+
+    
     return 0;
 }

@@ -21,9 +21,13 @@ class Player
     {
         //Deck deck;
         // randomiz card and set up for loop to only print 5 cards for hand.
-
+        //deck.Shuffle();
+        deck.PrintHand();
         
         
+    }
+    void Shuffle(){
+        deck.Shuffle();
     }
     void GetHand(){
         deck.PrintHand();
@@ -37,5 +41,22 @@ class Player
     }
     void trump(){
         deck.GetTrump();
+    }
+
+    string ChooseToPass(){
+        srand(time(0));
+        int array[2] = {1, 2};
+        int i, m;
+        string pass = "pass";
+        string keep = "keep card";
+        string output;
+        m = rand() % 2;
+        //cout << array[m] << endl;
+        if(array[m] == 1){
+            return pass;
+        }
+        else{
+            return keep;
+        }
     }
 };

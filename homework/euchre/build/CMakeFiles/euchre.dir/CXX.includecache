@@ -15,6 +15,14 @@ vector
 -
 time.h
 -
+random
+-
+algorithm
+-
+cstdlib
+-
+ctime
+-
 
 /mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/euchre/Player.cpp
 iostream

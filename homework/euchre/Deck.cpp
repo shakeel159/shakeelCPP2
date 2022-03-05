@@ -2,6 +2,10 @@
 #include <string>
 #include <vector>
 #include <time.h>
+#include <random>
+#include <algorithm>
+#include <cstdlib>
+#include <ctime>
 
 using std::cout;
 using std::endl;
@@ -82,9 +86,8 @@ class Card
 class Deck
 {
     public:
-    Card arryCards[24];
     int len = 24;
-
+    Card arryCards[24], temp;
     void printall()
     {
         
@@ -93,11 +96,30 @@ class Deck
         }
         
     }
+    void Shuffle(){
+        int i, m;
+        for (i = 0; i < 24; i++)
+        {
+            m = rand() % 24;
+            temp = arryCards[i];
+            arryCards[i] = arryCards[m];
+            arryCards[m] = temp;
+        }
+        
+    }
 
     // return array of 5 cards
     void PrintHand()
     {
+        
         Card hand[5];
+        srand(time(0));
+        Shuffle();
+        for (int r = 0; r < len; r++)
+        {
+            int index = rand() % len;
+
+        }
         if (len == 0) {
             cout << "no more cards in deck" << endl;
             return;
@@ -139,7 +161,7 @@ class Deck
                     c.value = 10;
                 }
 
-                cout << (int)c.names << " of " << (int)c.suits << endl;
+                //cout << (int)c.names << " of " << (int)c.suits << endl;
 
                // int index = (6 * col) + row - 1;
 
