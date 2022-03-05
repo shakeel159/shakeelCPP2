@@ -42,6 +42,9 @@ class Player
     void trump(){
         deck.GetTrump();
     }
+    void NewTrump(){
+        deck.NewGetTrump();
+    }
 
     string ChooseToPass(){
         srand(time(0));

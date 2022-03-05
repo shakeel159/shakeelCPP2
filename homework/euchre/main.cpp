@@ -78,6 +78,11 @@ int main(int argc, char * argv[])
     else{
         cout << "Player 4 decided to " + p4.ChooseToPass() << endl;
     }
+    if(output == "pass"){
+        cout << endl;
+        cout << "trump card: " <<endl;
+        dealer.NewTrump();
+    }
 
     
     return 0;

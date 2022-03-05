@@ -144,6 +144,12 @@ class Deck
             arryCards[i].PrintCard();
         }
     }
+    void NewGetTrump(){
+        for (int i = 0; i < 2; i++) {
+            i++;
+            arryCards[i].PrintCard();
+        }
+    }
 
     void SetUpCards()
     {
