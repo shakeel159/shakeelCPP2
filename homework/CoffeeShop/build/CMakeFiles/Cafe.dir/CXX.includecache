@@ -6,7 +6,19 @@
 
 #IncludeRegexTransform: 
 
+/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/CoffeeShop/Menu.cpp
+iostream
+-
+string
+-
+cstdlib
+-
+
 /mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/CoffeeShop/main.cpp
 iostream
 -
+string
+-
+Menu.cpp
+/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/CoffeeShop/Menu.cpp
 
