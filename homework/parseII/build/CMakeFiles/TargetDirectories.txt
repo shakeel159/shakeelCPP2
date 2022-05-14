@@ -1,0 +1,3 @@
+/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/parseII/build/CMakeFiles/rebuild_cache.dir
+/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/parseII/build/CMakeFiles/edit_cache.dir
+/mnt/c/Users/Jazib/source/repos/JShakeelCpp2/homework/parseII/build/CMakeFiles/Parser.dir
